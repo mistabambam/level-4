@@ -1,0 +1,167 @@
+:root {
+  --green: rgba(44, 138, 114, 1);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  width: 400px;
+  border-radius: 0.5rem;
+  position: absolute;
+  padding: 1rem 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.911);
+  box-shadow: 0 4px 10px grey;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+.header {
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 30px;
+}
+
+.header p {
+  font-size: 15px;
+  font-weight: 100;
+}
+
+form {
+  padding: 15px 40px;
+}
+
+.form-control {
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.form-control {
+  display: flex;
+  align-items: center;
+}
+
+.form-control input {
+  border: none;
+  outline: none;
+  font-size: 13px;
+  width: 100%;
+  padding: 0.8rem 0.3rem;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid var(--green);
+}
+
+.fa-user,
+.fa-lock,
+.fa-telegram-plane {
+  margin-right: 0.5rem;
+}
+
+#eye-way {
+  position: absolute;
+  right: 4%;
+  top: 27%;
+}
+
+.fa-check-circle {
+  position: absolute;
+  left: 97%;
+  visibility: hidden;
+}
+
+.fa-exclamation-circle {
+  position: absolute;
+  left: 97%;
+  visibility: hidden;
+}
+
+.form-control.form-control.error i.fa-exclamation-circle {
+  visibility: visible;
+  color: rgb(197, 25, 25);
+  transition: all 0.5s;
+}
+
+.form-control.form-control.success i.fa-check-circle {
+  visibility: visible;
+  color: var(--green);
+  transition: all 0.5s;
+}
+
+.form-control small {
+  position: absolute;
+  visibility: hidden;
+  left: 0;
+  bottom: 0;
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+}
+
+.form-control.error small {
+  visibility: visible;
+  color: rgb(197, 25, 25);
+  transition: all 0.5s;
+}
+
+#password {
+  background-image: url("img/invisible.png");
+  background-position: 97% center;
+  background-repeat: no-repeat;
+}
+
+#password.visible {
+  background-image: url("img/visible.png");
+}
+
+#toggle-password {
+  display: none;
+}
+
+#toggle-password + label {
+  text-indent: -9999px;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  margin-left: -32px;
+  cursor: pointer;
+}
+/* footer button */
+.btn {
+  width: 100%;
+  background: var(--green);
+  border: 1px solid var(--green);
+  color: #fff;
+  padding: 6px 0;
+  margin-top: 1.2rem;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+/* footer */
+.foot-form {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 10;
+
+  margin-bottom: 10px;
+  line-height: 15px;
+}
+
+.foot-form-color a {
+  color: var(--green);
+  text-decoration: none;
+}

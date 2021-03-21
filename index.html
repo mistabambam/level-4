@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="images/png" href="img/myicon.ico" />
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+
+    <title>Signup Page</title>
+  </head>
+  <body>
+    <div class="container">
+      <!--Header Section-->
+      <div class="header">
+        <h1>Create Account</h1>
+        <p>It's free and hardly takes more than 30 seconds</p>
+      </div>
+      <!--Form Section-->
+      <form action="" class="form" id="form">
+        <!-- username -->
+        <div class="form-control">
+          <i class="fas fa-user"></i>
+          <input
+            id="username"
+            type="text"
+            name=""
+            placeholder="Username"
+            value=""
+          />
+          <i class="fas fa-check-circle fa-xs"></i>
+          <i class="fas fa-exclamation-circle fa-xs"></i>
+          <small id="error-msg">Error message</small>
+        </div>
+
+        <!-- email -->
+        <div class="form-control">
+          <i class="fab fa-telegram-plane"></i>
+          <input
+            id="email"
+            type="email"
+            name=""
+            placeholder="Email Address"
+            value=""
+          />
+          <i class="fas fa-check-circle fa-xs"></i>
+          <i class="fas fa-exclamation-circle fa-xs"></i>
+          <small>Error message</small>
+        </div>
+
+        <!-- password -->
+        <div class="form-control">
+          <i class="fas fa-lock"></i>
+          <input
+            id="password"
+            type="password"
+            name=""
+            placeholder="Password"
+            value=""
+          />
+          <i onclick="toggle()" id="eye-way" class="fas fa-eye fa-xs"></i>
+          <i class="fas fa-check-circle fa-xs"></i>
+          <i class="fas fa-exclamation-circle fa-xs"></i>
+          <small>Error message</small>
+        </div>
+
+        <!-- confirm password -->
+        <div class="form-control">
+          <i class="fas fa-lock"></i>
+          <input
+            id="password2"
+            type="password"
+            name=""
+            placeholder="Confirm Password"
+            value=""
+          />
+          <i class="fas fa-check-circle fa-xs"></i>
+          <i class="fas fa-exclamation-circle fa-xs"></i>
+          <small>Error message</small>
+        </div>
+
+        <!--Button-->
+        <button class="btn">Sign Up</button>
+      </form>
+
+      <!-- end of form -->
+
+      <!--Footer Section-->
+      <footer class="foot-form">
+        <p>
+          By Clicking the Sign Up button, you agree to our <br />
+          <span>
+            <span class="foot-form-color">
+              <a href="#">Terms & Conditions,</a> </span
+            >and
+            <span class="foot-form-color">
+              <a href="#">Privacy Policy</a>
+            </span>
+          </span>
+        </p>
+      </footer>
+      <!--End of footer sectiom-->
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
